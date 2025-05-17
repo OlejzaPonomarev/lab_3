@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             buttonAddAll = new Button();
+            buttonIsConnected = new Button();
             SuspendLayout();
             // 
             // buttonAddAll
             // 
-            buttonAddAll.Location = new Point(12, 12);
+            buttonAddAll.Location = new Point(12, 65);
             buttonAddAll.Name = "buttonAddAll";
             buttonAddAll.Size = new Size(163, 47);
             buttonAddAll.TabIndex = 0;
@@ -41,11 +42,22 @@
             buttonAddAll.UseVisualStyleBackColor = true;
             buttonAddAll.Click += buttonAddAll_Click;
             // 
+            // buttonIsConnected
+            // 
+            buttonIsConnected.Location = new Point(12, 12);
+            buttonIsConnected.Name = "buttonIsConnected";
+            buttonIsConnected.Size = new Size(163, 47);
+            buttonIsConnected.TabIndex = 1;
+            buttonIsConnected.Text = "Проверить подключение";
+            buttonIsConnected.UseVisualStyleBackColor = true;
+            buttonIsConnected.Click += buttonIsConnected_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(290, 399);
+            Controls.Add(buttonIsConnected);
             Controls.Add(buttonAddAll);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button buttonAddAll;
+        private Button buttonIsConnected;
     }
 }
