@@ -6,5 +6,10 @@ namespace lab_3
         {
             InitializeComponent();
         }
+
+        private void buttonAddAll_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

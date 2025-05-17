@@ -39,6 +39,7 @@
             buttonAddAll.TabIndex = 0;
             buttonAddAll.Text = "Добавить 1 кк записей";
             buttonAddAll.UseVisualStyleBackColor = true;
+            buttonAddAll.Click += buttonAddAll_Click;
             // 
             // Form1
             // 
