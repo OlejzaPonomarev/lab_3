@@ -30,13 +30,15 @@
         {
             buttonAddAll = new Button();
             buttonIsConnected = new Button();
+            buttonBTree = new Button();
+            buttonResult = new Button();
             SuspendLayout();
             // 
             // buttonAddAll
             // 
             buttonAddAll.Location = new Point(12, 65);
             buttonAddAll.Name = "buttonAddAll";
-            buttonAddAll.Size = new Size(163, 47);
+            buttonAddAll.Size = new Size(266, 47);
             buttonAddAll.TabIndex = 0;
             buttonAddAll.Text = "Добавить 1 кк записей";
             buttonAddAll.UseVisualStyleBackColor = true;
@@ -46,21 +48,45 @@
             // 
             buttonIsConnected.Location = new Point(12, 12);
             buttonIsConnected.Name = "buttonIsConnected";
-            buttonIsConnected.Size = new Size(163, 47);
+            buttonIsConnected.Size = new Size(266, 47);
             buttonIsConnected.TabIndex = 1;
             buttonIsConnected.Text = "Проверить подключение";
             buttonIsConnected.UseVisualStyleBackColor = true;
             buttonIsConnected.Click += buttonIsConnected_Click;
+            // 
+            // buttonBTree
+            // 
+            buttonBTree.Location = new Point(12, 118);
+            buttonBTree.Name = "buttonBTree";
+            buttonBTree.Size = new Size(266, 47);
+            buttonBTree.TabIndex = 2;
+            buttonBTree.Text = "B-Tree (сбалансированное дерево)";
+            buttonBTree.UseVisualStyleBackColor = true;
+            buttonBTree.Click += buttonBTree_Click;
+            // 
+            // buttonResult
+            // 
+            buttonResult.Location = new Point(12, 340);
+            buttonResult.Name = "buttonResult";
+            buttonResult.Size = new Size(266, 47);
+            buttonResult.TabIndex = 3;
+            buttonResult.Text = "Результаты";
+            buttonResult.UseVisualStyleBackColor = true;
+            buttonResult.Click += buttonResult_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(290, 399);
+            Controls.Add(buttonResult);
+            Controls.Add(buttonBTree);
             Controls.Add(buttonIsConnected);
             Controls.Add(buttonAddAll);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "lab_3";
             ResumeLayout(false);
         }
 
@@ -68,5 +94,7 @@
 
         private Button buttonAddAll;
         private Button buttonIsConnected;
+        private Button buttonBTree;
+        private Button buttonResult;
     }
 }
